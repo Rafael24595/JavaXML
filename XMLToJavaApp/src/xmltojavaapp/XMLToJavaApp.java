@@ -22,9 +22,6 @@ import org.xml.sax.SAXException;
 
 public class XMLToJavaApp {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String argv[]) throws ParserConfigurationException, SAXException, TransformerException {
         
         ArrayList<Users> users = new ArrayList<Users>();

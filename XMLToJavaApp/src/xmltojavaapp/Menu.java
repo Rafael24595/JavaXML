@@ -105,7 +105,7 @@ public class Menu {
                         
                         while (overWrite != 0){
                                                  
-                            System.out.println("\n¿Qué quieres cambiar? \n1.-Nombre \n2.-Apellidos \n3.-Fecha de nacimiento \n4.-Módulo \n0.-Salir\n");
+                            System.out.println("\n¿Qué quieres cambiar? \n1.-Nombre \n2.-Apellidos \n3.-Fecha de nacimiento \n4.-Ciclo \n0.-Salir\n");
                         
                             overWrite = keyboard.nextInt();
                             

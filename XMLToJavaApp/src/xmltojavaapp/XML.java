@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package xmltojavaapp;
 
 import java.io.File;
@@ -59,7 +55,7 @@ public class XML {
                         ,eElement.getElementsByTagName("nombre").item(0).getTextContent()
                         ,eElement.getElementsByTagName("apellidos").item(0).getTextContent()
                         ,eElement.getElementsByTagName("fechaNacimiento").item(0).getTextContent()
-                        ,eElement.getElementsByTagName("modulo").item(0).getTextContent());
+                        ,eElement.getElementsByTagName("ciclo").item(0).getTextContent());
                 
                 users.add(user);
                 
@@ -97,8 +93,6 @@ public class XML {
                 attr.setValue("" + myUsers.get(i).getId());
                 user.setAttributeNode(attr);
 
-                //you can also use staff.setAttribute("id", "1") for this
-
                 Element nif = doc.createElement("nif");
                 nif.appendChild(doc.createTextNode(myUsers.get(i).getNif()));
                 user.appendChild(nif);
@@ -115,16 +109,12 @@ public class XML {
                 date.appendChild(doc.createTextNode(myUsers.get(i).getDate()));
                 user.appendChild(date);
 
-                Element module = doc.createElement("modulo");
+                Element module = doc.createElement("ciclo");
                 module.appendChild(doc.createTextNode(myUsers.get(i).getModule()));
                 user.appendChild(module);
                  
              }
             
-            
- 
-            // create the xml file
-            //transform the DOM Object to an XML File
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             
             Transformer transformer = transformerFactory.newTransformer();

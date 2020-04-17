@@ -5,55 +5,55 @@
         <nombre>Miguel</nombre>
         <apellidos>Fernández Gutierrez</apellidos>
         <fechaNacimiento>14-10-1998</fechaNacimiento>
-        <modulo>DAM</modulo>
+        <ciclo>DAM</ciclo>
     </usuario>
     <usuario id="2">
         <nif>01184224T</nif>
         <nombre>Óscar</nombre>
         <apellidos>Rodríguez Heredia</apellidos>
         <fechaNacimiento>07-10-1990</fechaNacimiento>
-        <modulo>DAW</modulo>
+        <ciclo>DAW</ciclo>
     </usuario>
     <usuario id="3">
         <nif>53635706M</nif>
         <nombre>Genaro</nombre>
         <apellidos>Jiménez Moreno</apellidos>
         <fechaNacimiento>05-11-1989</fechaNacimiento>
-        <modulo>DAM</modulo>
+        <ciclo>DAM</ciclo>
     </usuario>
     <usuario id="4">
         <nif>88000405J</nif>
         <nombre>Bernardo</nombre>
         <apellidos>Moreno</apellidos>
         <fechaNacimiento>05-09-1980</fechaNacimiento>
-        <modulo>DAW</modulo>
+        <ciclo>DAW</ciclo>
     </usuario>
     <usuario id="5">
         <nif>62565057C</nif>
         <nombre>Miguel</nombre>
         <apellidos>Aranda Heredia</apellidos>
         <fechaNacimiento>05-04-1986</fechaNacimiento>
-        <modulo>DAW</modulo>
+        <ciclo>DAW</ciclo>
     </usuario>
     <usuario id="6">
         <nif>62523288L</nif>
         <nombre>Pablo</nombre>
         <apellidos>Fernández</apellidos>
         <fechaNacimiento>01/02/2000</fechaNacimiento>
-        <modulo>DAM</modulo>
+        <ciclo>DAM</ciclo>
     </usuario>
     <usuario id="7">
         <nif>40031838Q</nif>
         <nombre>Marcelo</nombre>
         <apellidos>Venegas</apellidos>
         <fechaNacimiento>01/08/1980</fechaNacimiento>
-        <modulo>DAM</modulo>
+        <ciclo>DAM</ciclo>
     </usuario>
     <usuario id="8">
         <nif>12345678A</nif>
         <nombre>Rafael</nombre>
         <apellidos>Ruiz</apellidos>
         <fechaNacimiento>24-05-1995</fechaNacimiento>
-        <modulo>DAW</modulo>
+        <ciclo>DAW</ciclo>
     </usuario>
 </usuarios>

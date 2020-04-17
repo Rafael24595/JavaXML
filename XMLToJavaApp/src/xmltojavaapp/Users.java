@@ -3,6 +3,7 @@ package xmltojavaapp;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Users {
@@ -193,27 +194,40 @@ public class Users {
         
         System.out.println("\nIntroduce tu fecha de nacimiento: ");   
         
-        while(day < 1 || day >312){
-                       
-            System.out.print(" -Día: ");
-                   
-            day = keyboard.nextInt();
+        while(day < 1 || day >31){ 
+
+            try {
+                
+                System.out.print(" -Día: ");
+                
+                day = keyboard.nextInt();
+            } 
+            catch (InputMismatchException | NumberFormatException e) {keyboard.next();}
                        
         }
         
         while(month < 1 || month > 12){
                        
-            System.out.print(" -Mes: ");
-                   
-            month = keyboard.nextInt();
+            
+            try {
+                
+                System.out.print(" -Mes: ");
+                
+                month = keyboard.nextInt();
+            } 
+            catch (InputMismatchException | NumberFormatException e) {keyboard.next();}
                        
         }
         
         while(year < 1900 || year > actualDate - 18){
-                       
-            System.out.print(" -Año: ");
-                   
-            year = keyboard.nextInt();
+            
+            try {
+                
+                System.out.print(" -Año: ");
+                
+                year = keyboard.nextInt();
+            } 
+            catch (InputMismatchException | NumberFormatException e) {keyboard.next();}
                        
         }
         
@@ -247,7 +261,7 @@ public class Users {
         
         Scanner keyboard = new Scanner (System.in);
         
-        System.out.println("\nIntroduce el nombre del módulo\n");
+        System.out.println("\nIntroduce el nombre del ciclo\n");
                 
         String module = keyboard.next();
                 
@@ -310,12 +324,12 @@ public class Users {
     
     public void userToString() {
         
-              System.out.println("Id: "+ id);
+              System.out.println("\nId: "+ id);
               System.out.println("NIF: "+ nif);
               System.out.println("Nombre: "+ name);
               System.out.println("Apellidos: "+ subname);
               System.out.println("Fecha de nacimiento: "+ date);
-              System.out.println("Modulo: "+ module + "\n");
+              System.out.println("Ciclo: "+ module);
         
     }           
                 
