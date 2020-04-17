@@ -161,6 +161,8 @@ public class Menu {
                         
                         users.remove(i);
                         
+                        Users.validateId(users);
+                        
                     }
                     
                 }

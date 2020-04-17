@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Users {
                 
-                private final int id;
+                private int id;
                 private String nif;
                 private String name;
                 private String subname;
@@ -48,6 +48,10 @@ public class Users {
         return module;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public void setNif(String nif) {
         this.nif = nif;
     }
@@ -68,6 +72,16 @@ public class Users {
         this.module = module;
     }
 
+    public static void validateId(ArrayList<Users> users){
+        
+        for (int i = 0; i < users.size(); i++) {
+            
+            users.get(i).setId(i+1);
+            
+        }
+        
+    }
+    
     public static String validateNameSubname(String type){
         
         Scanner keyboard = new Scanner (System.in);
@@ -279,7 +293,7 @@ public class Users {
         
         while(i == 0 && !nif.equals(users.get(i).getNif())){
                         
-                        System.out.println("\nIntroduce el NIF del usuario a mostrar\n");
+                        System.out.println("\nIntroduce el NIF del usuario a buscar\n");
                         
                         nif = keyboard.next();
                         
